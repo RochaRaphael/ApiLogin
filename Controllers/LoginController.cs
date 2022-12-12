@@ -33,9 +33,8 @@ namespace ApiLogin.Controllers
         }
 
 
-        [HttpPost("v1/login/{id:int}")]
+        [HttpPost("v1/login")]
         public async Task<IActionResult> PostAsync(
-                    [FromRoute] int id,
                     [FromBody] CreateLoginViewModel login ,
                     [FromServices] ApiLoginDataContext context)
         {
