@@ -1,6 +1,11 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+using ApiLogin.Data;
+using Microsoft.AspNetCore.Mvc;
 
-app.MapGet("/", () => "Hello World!");
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<ApiLoginDataContext>();
+
+var app = builder.Build();
+app.MapControllers();
 
 app.Run();
