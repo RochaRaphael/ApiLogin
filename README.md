@@ -3,8 +3,8 @@
 Essa API foi desenvolvida  com o foco de melhorar as habilidades com o uso de rotas e verbos.
 
 
-## Arquitetura
-Usei a arquitetura MVC, mas como não temos a parte do Front-end na API, usei apenas o "M" (Model) e o "C"(Controller).
+## Padrão
+Usei o padrão MVC mas sem o View por enqunato, então usei apenas o "M" (Model) e o "C"(Controller).
 
 A pasta `Data` faz parte do uso do Entity Framework, para fazer o mapeamento fluente. As configurações do mapeamento estão dentro da pasta `Mapping`.
 
